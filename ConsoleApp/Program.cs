@@ -1,31 +1,31 @@
-﻿using System;
+﻿using AdventOfCode2019CSharp;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AdventOfCode2019CSharp;
 
 namespace ConsoleApp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             ResultDay1();
 
             Console.ReadLine();
         }
 
-        static void ResultDay1()
+        public static void ResultDay1()
         {
             Console.WriteLine("Day1:");
 
-            List<int> masses = Day1.GetAllMasses();
+            Day1 p1 = new Day1P1();
+            Day1 p2 = new Day1P2();
 
-            int fuel = Day1.GetAllFuel_part1(masses);
+            List<int> masses = p1.GetAllMasses();
+
+            int fuel = p1.GetAllFuel(masses);
             Console.WriteLine("\tPart 1 : Il faut {0} fuel", fuel);
 
-            fuel = Day1.GetAllFuel(masses);
+            fuel = p2.GetAllFuel(masses);
             Console.WriteLine("\tPart 2 : Il faut {0} fuel", fuel);
         }
     }
