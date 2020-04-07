@@ -1,13 +1,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AdventOfCode2019CSharp;
+using AdventOfCode2019CSharp.Day1;
 
 namespace Tests.Day1Tests
 {
     [TestClass]
     public class GetNeededFuel
     {
-        public Day1 day1;
-        public static object[] DataRows {
+        private readonly Day1 _day1;
+        public static object[][] DataRows {
             get
             {
                 return new[] {
@@ -25,14 +25,14 @@ namespace Tests.Day1Tests
 
         public GetNeededFuel()
         {
-            day1 = new Day1P2();
+            _day1 = new Day1P2();
         }
 
         [DataTestMethod]
         [DynamicData("DataRows")]
         public void _1_should_return_int(int mass, int expected)
         {
-            int fuel = day1.GetNeededFuel(mass);
+            int fuel = _day1.GetNeededFuel(mass);
 
             Assert.IsInstanceOfType(fuel, typeof(int));
         }
@@ -41,7 +41,7 @@ namespace Tests.Day1Tests
         [DynamicData("DataRows")]
         public void _2_should_be_positive(int mass, int expected)
         {
-            int fuel = day1.GetNeededFuel(mass);
+            int fuel = _day1.GetNeededFuel(mass);
 
             Assert.IsTrue(fuel > 0);
         }
@@ -50,7 +50,7 @@ namespace Tests.Day1Tests
         [DynamicData("DataRows")]
         public void _3_should_be_less_than_mass(int mass, int expected)
         {
-            int fuel = day1.GetNeededFuel(mass);
+            int fuel = _day1.GetNeededFuel(mass);
 
             Assert.IsTrue(mass > fuel);
         }
@@ -59,7 +59,7 @@ namespace Tests.Day1Tests
         [DynamicData("DataRows")]
         public void _4_fuel_should_be_equals_to_expected(int mass, int expected)
         {
-            int fuel = day1.GetNeededFuel(mass);
+            int fuel = _day1.GetNeededFuel(mass);
 
             Assert.AreEqual(expected, fuel);
         }

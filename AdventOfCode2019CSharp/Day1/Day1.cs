@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace AdventOfCode2019CSharp
+namespace AdventOfCode2019CSharp.Day1
 {
     public abstract class Day1
     {

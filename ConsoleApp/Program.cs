@@ -1,4 +1,4 @@
-﻿using AdventOfCode2019CSharp;
+﻿using AdventOfCode2019CSharp.Day1;
 using System;
 using System.Collections.Generic;
 

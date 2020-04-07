@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AdventOfCode2019CSharp
+namespace AdventOfCode2019CSharp.Day1
 {
     public class Day1P2 : Day1
     {

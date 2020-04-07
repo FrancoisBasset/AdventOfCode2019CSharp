@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 
-namespace AdventOfCode2019CSharp
+namespace AdventOfCode2019CSharp.Day1
 {
     public class Day1P1 : Day1
     {
