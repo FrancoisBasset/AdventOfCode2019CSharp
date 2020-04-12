@@ -11,8 +11,7 @@ namespace AdventOfCode2019CSharp.Day1
 
         public List<int> GetAllMasses()
         {
-            FileStream fs = new FileStream("D:/Dev/AdventOfCode2019CSharp/AdventOfCode2019CSharp/Day1/masses.txt", FileMode.Open);
-            StreamReader reader = new StreamReader(fs);
+            StreamReader reader = new StreamReader("D:/Dev/AdventOfCode2019CSharp/AdventOfCode2019CSharp/Day1/masses.txt");
 
             List<int> masses = new List<int>();
 
@@ -22,8 +21,8 @@ namespace AdventOfCode2019CSharp.Day1
             {
                 masses.Add(Int32.Parse(line));
             }
-
-            fs.Close();
+            
+            reader.Close();
 
             return masses;
         }
