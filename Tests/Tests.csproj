@@ -57,6 +57,9 @@
     <Compile Include="Day2Tests\ExecuteIntCodeWithNounAndVerb.cs" />
     <Compile Include="Day2Tests\GetIntCode.cs" />
     <Compile Include="Day2Tests\GetNounAndVerbForIntCode.cs" />
+    <Compile Include="Day3Tests\DirectionFromCode.cs" />
+    <Compile Include="Day3Tests\DistanceFromCode.cs" />
+    <Compile Include="Day3Tests\Movement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
